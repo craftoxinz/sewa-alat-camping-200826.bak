@@ -1,4 +1,5 @@
-import AuthLayoutTemplate from '@/layouts/auth/auth-simple-layout';
+import * as React from 'react';
+import AuthLayoutTemplate from '@/layouts/auth/auth-cover-layout';
 
 export default function AuthLayout({
     title = '',

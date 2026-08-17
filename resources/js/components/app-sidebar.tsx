@@ -19,6 +19,7 @@ import {
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
+import * as equipmentCategoryRoutes from '@/routes/admin/equipment-categories';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -28,8 +29,8 @@ const mainNavItems: NavItem[] = [
         icon: LayoutGridIcon,
     },
     {
-        title: 'Categories',
-        href: '#',
+        title: 'Equipment Categories',
+        href: equipmentCategoryRoutes.index(),
         icon: TagIcon,
     },
 ];
@@ -63,7 +64,6 @@ export function AppSidebar() {
             </SidebarHeader>
 
             <SidebarContent className="">
-                <NavMain items={mainNavItems} />
                 <NavMain items={mainNavItems} />
             </SidebarContent>
 

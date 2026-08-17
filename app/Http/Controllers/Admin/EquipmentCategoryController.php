@@ -54,7 +54,7 @@ class EquipmentCategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(EquipmentCategory $equipmentCategory)
+    public function show(EquipmentCategory $equipmentCategory): void
     {
         //
     }
@@ -92,7 +92,7 @@ class EquipmentCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(EquipmentCategory $equipmentCategory)
+    public function destroy(EquipmentCategory $equipmentCategory): void
     {
         $equipmentCategory->delete();
     }
